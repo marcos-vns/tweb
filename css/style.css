@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Titillium Web", sans-serif;
+}
+section{
+    height: 400px;
+}
+.intro{
+    background-color: #000000;
+    color: #20C20E;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.info{
+    width: 425px;
+}
+.info h1{
+    font-size: 90px;
+    line-height: 80px;
+    margin-bottom: 40px;
+}
+.info p{
+    font-size: 30px;
+}
+.about{
+    color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.about .description{
+    width: 400px;
+}
+.child{
+    flex: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.pic-2 img{
+    margin-right: 100px;
+}
+.description{
+    margin-left: 100px;
+}
+.left{
+    justify-content: end;
+}
+.about .left{
+    background-color: #20C20E;
+}
+.about .right{
+    background-color: #1eb60e;
+}
+.qualities{
+    color: #20C20E;
+    display: flex;
+    justify-content: space-evenly;
+}
+.qualities .left{
+    background-color: #000000;
+}
+.qualities .right{
+    background-color: #0f0f0f;
+}
+.academic{
+    margin-right: 100px;
+}
+.skills{
+    margin-left: 120px;
+}
+.pic-1 img{
+    width: 250px;
+    border-radius: 5px;
+}
+.pic-2 img{
+    width: 350px;
+    border-radius: 50%;
+}
+.previous-projects{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px 0 30px 0;
+}
+.project{
+    display: flex;
+    flex-direction: column;
+}
+.project-img img{
+    width: 90px;
+}
+.project-desc{
+    width: 300px;
+}
+.projects, .contacts{
+    text-align: center;
+}
+.projects{
+    background-color: #20C20E;
+}
+.contacts{
+    background-color: #1eb60e;
+}
+.projects, .contacts{
+    padding: 40px 0;
+}
+h2{
+    font-size: 35px;
+}
+.contacts-cta{
+    width: 315px;
+    margin: 0 auto;
+    line-height: 45px;
+    margin-top: 30px;
+}
+.contacts-info{
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+}
