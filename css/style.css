@@ -11,6 +11,16 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+section{
+    margin-top: 60px;
+    text-align: center;
+}
+h2{
+    font-size: 20px;
 }
 .logo{
     width: 75px;
@@ -30,11 +40,14 @@ a{
 li a{
     color: #333;
 }
+h1{
+    font-size: 32px;
+}
 #home{
     background-image: url('../img/bg.png');
     background-repeat: no-repeat;
     background-position: center;
-    height: 400px;
+    height: 450px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -42,8 +55,11 @@ li a{
     text-shadow: 1px 1px 3px rgb(255, 255, 255);
 }
 #home h1{
-    font-size: 32px;
+    font-size: 36px;
     margin-bottom: 10px;
+}
+#home button{
+    width: auto;
 }
 .home-text{
     margin-top: 85px;
@@ -51,6 +67,7 @@ li a{
     margin-bottom: 15px;
 }
 .btn{
+    width: 100%;
     background-color: #333;
     color: #ffff;
     padding: 10px;
@@ -60,4 +77,95 @@ li a{
     background-color: gray;
     color: black;
     cursor: pointer;
+}
+#products{
+    text-align: center;
+}
+.row{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.product{
+    text-align: center;
+    border: 1px solid black;
+    padding: 25px;
+}
+.product span{
+    display: block;
+}
+.person{
+    border: 1px solid black;
+    padding: 25px;
+    line-height: 20px;
+}
+.person img{
+    width: 150px;
+    border-radius: 50%;
+}
+.person p{
+    margin-top: 10px;
+    width: 300px;
+}
+.person span{
+    font-weight: bold;
+}
+.question{
+    border: 1px solid black;
+    width: 400px;
+    padding: 20px;
+    line-height: 20px;
+}
+.question h2{
+    margin-bottom: 10px;
+}
+#contact{
+    margin-bottom: 20px;
+}
+.cta{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.form{
+    padding: 10px;
+    width: 500px;
+}
+.form h1{
+    margin-bottom: 15px;
+}
+form input{
+    width: 100%;
+}
+form input, form textarea{
+    border: 1px solid black;
+    padding: 10px;
+}
+.image{
+    width: 600px;
+}
+.image img{
+    width: 100%;
+}
+footer{
+    background-color: #333;
+    text-align: center;
+    padding: 30px 0;
+    line-height: 30px;
+}
+footer p, footer a{
+    color: #ffff;
+}
+
+@media (max-width: 768){
+    .image{
+        display: none;
+    }
 }
