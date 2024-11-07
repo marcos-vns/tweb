@@ -39,6 +39,7 @@ a{
 }
 li a{
     color: #333;
+    display: inline-block;
 }
 h1{
     font-size: 32px;
@@ -60,11 +61,13 @@ h1{
 }
 #home button{
     width: auto;
+    font-size: 16px;
 }
 .home-text{
     margin-top: 85px;
     text-align: center;
     margin-bottom: 15px;
+    padding: 10px;
 }
 .btn{
     width: 100%;
@@ -87,17 +90,25 @@ h1{
     justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
+    padding: 10px;
 }
-.product{
+.product, .article{
     text-align: center;
-    border: 1px solid black;
+    border: 1px solid rgb(138, 138, 138);
     padding: 25px;
+}
+.item-info{
+    margin: 5px 0 10px 0;
+    line-height: 20px;
+}
+.item-info h2{
+    margin-bottom: 5px;
 }
 .product span{
     display: block;
 }
 .person{
-    border: 1px solid black;
+    border: 1px solid rgb(138, 138, 138);
     padding: 25px;
     line-height: 20px;
 }
@@ -112,8 +123,14 @@ h1{
 .person span{
     font-weight: bold;
 }
+.product, .article{
+    width: 395px;
+}
+.product img, .article img{
+    width: 100%;
+}
 .question{
-    border: 1px solid black;
+    border: 1px solid rgb(138, 138, 138);
     width: 400px;
     padding: 20px;
     line-height: 20px;
@@ -144,8 +161,13 @@ form{
 form input{
     width: 100%;
 }
+input[type="submit"]{
+    background-color: #333;
+    color: #ffff;
+    border: none;
+}
 form input, form textarea{
-    border: 1px solid black;
+    border: 1px solid rgb(138, 138, 138);
     padding: 10px;
 }
 .image{
@@ -155,6 +177,7 @@ form input, form textarea{
     width: 100%;
 }
 footer{
+    width: 100%;
     background-color: #333;
     text-align: center;
     padding: 30px 0;
@@ -163,9 +186,39 @@ footer{
 footer p, footer a{
     color: #ffff;
 }
+footer a:hover{
+    color: #b1b1b1;
+}
 
-@media (max-width: 768){
+@media (max-width: 480px){
+    header, ul{
+        flex-direction: column;
+    }
+    nav, ul{
+        width: 100%;
+    }
+    ul{
+        text-align: center;
+        gap: 0;
+    }
+    li{
+        background-color: #333;
+    }
+    a{
+        color: #ffff !important;
+        width: 100%;
+        padding: 10px;
+    }
+    #home{
+        margin-top: 200px;
+    }
+    #home h1{
+        font-size: 32px;
+    }
     .image{
         display: none;
+    }
+    .form{
+        width: 350px;
     }
 }
