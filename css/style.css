@@ -166,15 +166,22 @@ input[type="submit"]{
     color: #ffff;
     border: none;
 }
+input[type="submit"]:hover{
+    background-color: gray;
+    color: black;
+    cursor: pointer;
+}
 form input, form textarea{
     border: 1px solid rgb(138, 138, 138);
     padding: 10px;
 }
 .image{
     width: 600px;
-}
-.image img{
-    width: 100%;
+    background-image: url('../img/ct.png');
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 footer{
     width: 100%;
@@ -189,7 +196,6 @@ footer p, footer a{
 footer a:hover{
     color: #b1b1b1;
 }
-
 @media (max-width: 480px){
     header, ul{
         flex-direction: column;
@@ -214,6 +220,9 @@ footer a:hover{
     }
     #home h1{
         font-size: 32px;
+    }
+    h1{
+        font-size: 26px;
     }
     .image{
         display: none;
